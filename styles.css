@@ -1,9 +1,9 @@
 :root {
-  --black: #0A0A0A;
-  --dark: #2B2B2B;
+  --black: #121212;
+  --dark: #121212;
   --white: #F5F5F5;
-  --accent: #5B8FD1;
-  --muted: #8A8F98;
+  --accent: #F5F5F5;
+  --muted: #F5F5F5;
 }
 
 * {
@@ -31,35 +31,37 @@ body {
   display: flex;
   gap: 20px;
   padding-bottom: 24px;
-  border-bottom: 1px solid var(--dark);
+  border-bottom: 1px solid var(--white);
   margin-bottom: 40px;
 }
 
 .logo {
   width: 64px;
   height: 64px;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
   letter-spacing: 2px;
   font-size: 16px;
+  color: var(--white);
 }
 
 .identity-text h1 {
   font-size: 22px;
   letter-spacing: 1px;
+  color: var(--white);
 }
 
 .identity-text p {
   color: var(--white);
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .identity-text span {
   display: block;
   font-size: 12px;
-  color: var(--muted);
+  color: var(--white);
   margin-top: 4px;
 }
 
@@ -71,7 +73,7 @@ body {
 h2 {
   font-size: 13px;
   letter-spacing: 2px;
-  color: var(--accent);
+  color: var(--white);
   margin-bottom: 12px;
 }
 
@@ -89,6 +91,7 @@ ul {
 li {
   margin-bottom: 6px;
   font-size: 15px;
+  color: var(--white);
 }
 
 /* EXPERIENCE ITEMS */
@@ -99,18 +102,19 @@ li {
 .item h3 {
   font-size: 16px;
   margin-bottom: 4px;
+  color: var(--white);
 }
 
 .meta {
   font-size: 12px;
-  color: var(--muted);
+  color: var(--white);
 }
 
 /* WORK AREAS */
 .work-area {
   margin-bottom: 20px;
   padding-left: 18px;
-  border-left: 2px solid var(--dark);
+  border-left: 2px solid var(--white);
 }
 
 .work-area h3 {
@@ -121,7 +125,7 @@ li {
 
 .work-area p {
   font-size: 14px;
-  color: var(--muted);
+  color: var(--white);
   margin-bottom: 0;
 }
 
@@ -129,7 +133,7 @@ li {
 .project {
   margin-bottom: 24px;
   padding-bottom: 20px;
-  border-bottom: 1px solid var(--dark);
+  border-bottom: 1px solid var(--white);
 }
 
 .project:last-child {
@@ -139,6 +143,7 @@ li {
 .project h3 {
   font-size: 16px;
   margin-bottom: 8px;
+  color: var(--white);
 }
 
 .project p {
@@ -149,12 +154,12 @@ li {
 
 .tech-stack {
   font-size: 13px;
-  color: var(--accent);
+  color: var(--white);
   margin-bottom: 8px;
 }
 
 .link {
-  color: var(--accent);
+  color: var(--white);
   text-decoration: none;
   font-size: 14px;
   transition: opacity 0.2s;
@@ -168,7 +173,7 @@ li {
 .experience-item {
   margin-bottom: 28px;
   padding-bottom: 20px;
-  border-bottom: 1px solid var(--dark);
+  border-bottom: 1px solid var(--white);
 }
 
 .experience-item:last-child {
@@ -178,11 +183,12 @@ li {
 .exp-header h3 {
   font-size: 16px;
   margin-bottom: 4px;
+  color: var(--white);
 }
 
 .exp-meta {
   font-size: 12px;
-  color: var(--muted);
+  color: var(--white);
   margin-bottom: 10px;
 }
 
@@ -195,6 +201,7 @@ li {
   margin-bottom: 8px;
   font-size: 14px;
   line-height: 1.5;
+  color: var(--white);
 }
 
 /* EDUCATION */
@@ -205,11 +212,12 @@ li {
 .education h3 {
   font-size: 16px;
   margin-bottom: 4px;
+  color: var(--white);
 }
 
 .edu-meta {
   font-size: 13px;
-  color: var(--muted);
+  color: var(--white);
   margin-bottom: 12px;
 }
 
@@ -221,7 +229,7 @@ li {
 .edu-focus h4 {
   font-size: 14px;
   margin-bottom: 8px;
-  color: var(--accent);
+  color: var(--white);
 }
 
 .edu-focus ul {
@@ -231,13 +239,14 @@ li {
 .edu-focus li {
   font-size: 14px;
   margin-bottom: 4px;
+  color: var(--white);
 }
 
 /* SKILL CATEGORIES */
 .skill-category {
   margin-bottom: 16px;
   padding-bottom: 12px;
-  border-bottom: 1px solid var(--dark);
+  border-bottom: 1px solid var(--white);
 }
 
 .skill-category:last-child {
@@ -247,7 +256,7 @@ li {
 .skill-category h3 {
   font-size: 14px;
   margin-bottom: 6px;
-  color: var(--accent);
+  color: var(--white);
 }
 
 .skill-category p {
@@ -259,11 +268,12 @@ li {
 .activity h3 {
   font-size: 15px;
   margin-bottom: 6px;
+  color: var(--white);
 }
 
 .activity p {
   font-size: 14px;
-  color: var(--muted);
+  color: var(--white);
 }
 
 /* CONTACT INFO */
@@ -273,7 +283,7 @@ li {
 }
 
 .contact-info a {
-  color: var(--accent);
+  color: var(--white);
   text-decoration: none;
   transition: opacity 0.2s;
 }
@@ -284,8 +294,8 @@ li {
 
 /* FOOTER */
 footer {
-  border-top: 1px solid var(--dark);
+  border-top: 1px solid var(--white);
   padding-top: 20px;
   font-size: 12px;
-  color: var(--muted);
+  color: var(--white);
 }
