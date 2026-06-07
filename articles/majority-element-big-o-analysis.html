@@ -1,0 +1,31 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Majority Element & Big-O Analysis</title> <link rel="stylesheet" href="../styles.css"> </head> <body> <header> <h1>Majority Element & Big-O Analysis</h1> <p class="meta">2026-06-07 • Algorithms • Notes</p> </header> <main> <section> <h2>Problem</h2> <p> LeetCode 169: Majority Element (Easy) Given an array nums of size n, return the majority element. </p> <p> The majority element is defined as the element that appears more than ⌊n / 2⌋ times. The majority element is guaranteed to exist. </p> </section> <section> <h2>Inputs</h2> <ul> <li>Input: Integer array nums of size n</li> <li>Output: Integer majority element</li> <li>Constraints: 1 ≤ n ≤ 5 × 10⁴, -10⁹ ≤ nums[i] ≤ 10⁹</li> <li>Guarantees: A majority element always exists</li> </ul> </section> <section> <h2>Initial Thoughts</h2> <p> There is confusion about the meaning of “majority element”. It is not n/2 itself. Instead, n/2 represents the threshold: the majority element must appear more than ⌊n/2⌋ times. </p> <p> A naive interpretation might incorrectly treat n/2 as the answer or a direct value, but it is only a frequency condition. </p> </section> <section> <h2>Key Insight</h2> <p> The majority element is defined by frequency dominance: it appears strictly more than half the array size. </p> <p> This leads to two valid solution approaches: </p> <ul> <li>Frequency counting using a hash map (simple but uses extra space)</li> <li>Boyer-Moore Voting Algorithm (optimal: O(n) time, O(1) space)</li> </ul> </section> <section> <h2>Algorithm</h2> <p>Hash Map Approach:</p> <pre><code> counts = {}
+
+for num in nums:
+counts[num] += 1
+
+for each key in counts:
+if counts[key] > n/2:
+return key
+</code></pre>
+
+<p>Boyer-Moore Voting Algorithm:</p> <pre><code> candidate = None count = 0
+
+for num in nums:
+if count == 0:
+candidate = num
+
+if num == candidate:
+    count += 1
+else:
+    count -= 1
+
+return candidate
+</code></pre>
+
+</section> <section> <h2>Pseudocode</h2> <pre><code> # Hash Map Version Create empty dictionary counts For each number in nums: increment counts[number] For each (number, count) in counts: if count > floor(n / 2): return number # Boyer-Moore Voting Algorithm candidate = None count = 0 For each number in nums: if count == 0: candidate = number if number == candidate: count += 1 else: count -= 1 Return candidate </code></pre> </section> <section> <h2>Complexity</h2> <p> Hash Map Solution: </p> <p>Time: O(n)</p> <p>Space: O(n)</p> <p> Boyer-Moore Voting Algorithm: </p> <p>Time: O(n)</p> <p>Space: O(1)</p> <hr> <h3>Big-O Interpretation</h3> <p> Big-O describes how runtime or memory grows as input size increases. </p> <ul> <li>O(1): Constant time, independent of input size</li> <li>O(log n): Logarithmic growth, typically halving problem size each step (e.g., binary search)</li> <li>O(n): Linear growth proportional to input size</li> <li>O(n log n): Common in efficient sorting algorithms</li> <li>O(n²): Quadratic growth, common in nested loops</li> </ul> <h3>Step-by-step reasoning examples</h3> <p>Single loop:</p> <pre><code> for i in range(n): print(i) </code></pre> <p>Time: O(n)</p> <p>Nested loops:</p> <pre><code> for i in range(n): for j in range(n): print(i, j) </code></pre> <p>Time: O(n²)</p> <p>Sequential loops:</p> <pre><code> for i in range(n): print(i)
+
+for j in range(n):
+print(j)
+</code></pre>
+
+<p>Time: O(n + n) → O(n)</p> <h3>Simplification rules</h3> <ul> <li>Drop constants: O(5n) → O(n)</li> <li>Keep dominant term: O(n² + n) → O(n²)</li> <li>Nested loops multiply: O(n × n) → O(n²)</li> <li>Sequential loops add: O(n + n) → O(n)</li> </ul> </section> <section> <h2>Pattern</h2> <p> This problem is a classic example of frequency dominance and cancellation-based algorithms. </p> <p> Boyer-Moore works by pairing off different elements and eliminating non-majority candidates through cancellation. </p> </section> <section> <h2>Lessons Learned</h2> <ul> <li>n/2 is a threshold, not the answer itself</li> <li>Majority element is defined by frequency, not value</li> <li>Hash maps provide straightforward counting but use extra space</li> <li>Boyer-Moore achieves optimal O(n) time and O(1) space</li> <li>Big-O describes growth rate, not exact runtime</li> <li>Nesting implies multiplication of complexity</li> </ul> </section> </main> </body> </html>
