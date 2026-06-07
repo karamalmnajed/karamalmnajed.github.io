@@ -3,21 +3,26 @@
   --text: #F5F5F5;
 }
 
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* GLOBAL LAYOUT + BASE */
 body {
   background: var(--bg);
   color: var(--text);
   font-family: "Baskerville", serif;
   line-height: 1.6;
 
-  /* GLOBAL LAYOUT */
+  /* IMPORTANT: removes browser default 8px offset */
+  margin: 0;
+
+  /* GLOBAL PAGE LAYOUT */
   max-width: 900px;
-  margin: 0 auto;
+  margin-inline: auto;
   padding: 60px 24px;
 }
 
