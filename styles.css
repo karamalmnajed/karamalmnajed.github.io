@@ -14,21 +14,21 @@ body {
   color: var(--text);
   font-family: "Baskerville", serif;
   line-height: 1.6;
-}
 
-.container {
+  /* GLOBAL LAYOUT */
   max-width: 900px;
   margin: 0 auto;
   padding: 60px 24px;
 }
 
+/* STRUCTURE SPACING */
 header,
 section,
-article,
 footer {
   margin-bottom: 40px;
 }
 
+/* TYPOGRAPHY */
 h1,
 h2,
 h3,
@@ -62,10 +62,12 @@ li {
   margin-bottom: 10px;
 }
 
+/* LISTS */
 ul {
   padding-left: 20px;
 }
 
+/* LINKS */
 a {
   text-decoration: none;
 }
@@ -74,11 +76,7 @@ a:hover {
   opacity: 0.8;
 }
 
-article {
-  padding-bottom: 24px;
-  border-bottom: 1px solid var(--text);
-}
-
+/* FOOTER */
 footer {
   border-top: 1px solid var(--text);
   padding-top: 20px;
