@@ -1,213 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Karam Al Mnajed | Computational Systems & Analytics</title>
-
-  <link rel="stylesheet" href="styles.css"/>
-  <link href="https://fonts.cdnfonts.com/css/baskerville" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karam Al Mnajed — Burdened With Strong Opinions</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="container">
 
-    <header>
-      <h1>KARAM AL MNAJED</h1>
-      <p>Computational Systems, Analytics & Operational Infrastructure</p>
-      <span>Systems • Data • Workflows • Technical Infrastructure</span>
-    </header>
+<svg class="grain" width="101%" height="101%">
+  <filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="5" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+  <rect width="101%" height="101%" filter="url(#n)"/>
+</svg>
+<div class="atmosphere"></div>
 
-    <section>
-      <p>
-        I work on problems involving systems, data, workflows, and technical infrastructure — with a focus on improving operational clarity, analytics visibility, and structured decision-making.
-      </p>
+<!-- Nav -->
+<nav class="top-nav" id="topNav">
+<a href="#" class="nav-brand">Karam Al Mnajed <span lang="ar">كرم المنجد</span></a>
+  <ul class="nav-links">
+    <li><a href="#features">Capabilities</a></li>
+    <li><a href="#pricing">Engagement</a></li>
+    <li><a href="#testimonials">Axioms</a></li>
+    <li><a href="#integrations">Expertise</a></li>
+    <li><a href="#cta">Contact</a></li>
+  </ul>
+  <a href="#pricing" class="nav-cta">Work Together</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span class="toggle-bar"></span><span class="toggle-bar"></span>
+  </button>
+</nav>
 
-      <p>
-        My background is in computer science, with academic and applied work across algorithms, databases, operating systems, analytics, machine learning, automation, and software systems.
-      </p>
-    </section>
-
-    <section>
-      <h2>AREAS OF WORK</h2>
-
-      <h3>Analytics Systems</h3>
-      <p>Dashboards, KPI tracking, reporting workflows, structured spreadsheets, and operational visibility systems.</p>
-
-      <h3>Automation & Data Workflows</h3>
-      <p>Python, SQL, ETL workflows, scripting, data handling, and process automation.</p>
-
-      <h3>Operational Infrastructure</h3>
-      <p>Operational structuring, workflow organization, process clarity, and systems coordination.</p>
-
-      <h3>Technical Systems</h3>
-      <p>Lightweight internal tooling, data infrastructure, workflow support systems, and technical process improvement.</p>
-    </section>
-
-    <section>
-      <h2>SELECTED PROJECTS</h2>
-
-      <article>
-        <h3>Customer Churn Prediction</h3>
-        <p>Built a machine learning system for churn classification and risk segmentation using behavioral and service-related data.</p>
-        <p>Python, Pandas, Scikit-learn, XGBoost</p>
-        <a href="https://github.com/KaramAlmnajed/Customer-Churn-Prediction" target="_blank">
-          github.com/KaramAlmnajed/Customer-Churn-Prediction
-        </a>
-      </article>
-
-      <article>
-        <h3>Employee Attrition Prediction</h3>
-        <p>Developed an end-to-end classification workflow for predicting employee attrition across organizational and behavioral variables.</p>
-        <p>Python, Machine Learning, Data Analysis</p>
-        <a href="https://github.com/KaramAlmnajed/Employee-Attrition-Prediction-Project" target="_blank">
-          github.com/KaramAlmnajed/Employee-Attrition-Prediction-Project
-        </a>
-      </article>
-
-      <article>
-        <h3>HR Analytics Dashboard</h3>
-        <p>
-          Designed a KPI-driven analytics system for workforce monitoring and attrition analysis across departments, demographics, and education fields.
-        </p>
-        <p>Tableau, Data Analysis, KPI Systems</p>
-        <a href="https://public.tableau.com/views/HRAnalyticsDashboard_16982716952420/HRAnalyticsDashboard?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank">
-          View Dashboard
-        </a>
-      </article>
-
-      <article>
-        <h3>Sales Data Analytics Dashboard</h3>
-        <p>
-          Built a structured sales analytics dashboard from raw transactional data for KPI analysis and operational reporting.
-        </p>
-        <p>Excel, Data Analysis, KPI Systems</p>
-        <a href="https://1drv.ms/x/s!AmMdi0a30Is2hSRi6i4s_5pM8yvF?e=lAp6rN" target="_blank">
-          View Dashboard
-        </a>
-      </article>
-    </section>
-
-    <section>
-      <h2>PROFESSIONAL EXPERIENCE</h2>
-
-      <article>
-        <h3>Independent Data Consultant — Analytics Systems & Engineering</h3>
-        <p>Self-employed | Jan 2026 – Present</p>
-
-        <ul>
-          <li>Designed and deployed end-to-end data systems integrating Python pipelines and SQL databases.</li>
-          <li>Engineered relational data models and ETL pipelines for analytics and reporting.</li>
-          <li>Developed KPI-driven analytical frameworks for operational visibility.</li>
-          <li>Delivered automation and system integration solutions using Python, SQL, and JavaScript.</li>
-        </ul>
-      </article>
-
-      <article>
-        <h3>Data Analyst — Yalla Wrap It</h3>
-        <p>Remote | Feb 2025 – May 2025</p>
-
-        <ul>
-          <li>Designed BI dashboards for operational monitoring.</li>
-          <li>Transformed raw data into standardized analytical models.</li>
-          <li>Developed KPI frameworks aligned with business objectives.</li>
-          <li>Built reporting systems using Python, SQL, and Google Sheets.</li>
-        </ul>
-      </article>
-
-      <article>
-        <h3>Business Development & Growth Analyst — InvestED</h3>
-        <p>Hybrid | Dec 2024 – May 2025</p>
-
-        <ul>
-          <li>Analyzed CRM and market datasets for growth strategy.</li>
-          <li>Consolidated fragmented business data into structured formats.</li>
-          <li>Identified customer segments and behavioral patterns.</li>
-        </ul>
-      </article>
-
-      <article>
-        <h3>Operations Manager — Damasqueno Sweets & Bakery</h3>
-        <p>Alexandria, Egypt | Apr 2018 – May 2022</p>
-
-        <ul>
-          <li>Managed operational workflows including inventory and service execution.</li>
-          <li>Designed operational procedures improving workflow consistency.</li>
-          <li>Developed systems for real-time operational responsiveness.</li>
-        </ul>
-      </article>
-    </section>
-
-    <section>
-      <h2>EDUCATION</h2>
-
-      <h3>B.S. in Computer Science — University of the People</h3>
-
-      <p>GPA: 3.69 / 4.0 — Cum Laude</p>
-
-      <ul>
-        <li>Algorithms & Data Structures</li>
-        <li>Operating Systems</li>
-        <li>Databases</li>
-        <li>Machine Learning</li>
-        <li>Statistical Inference</li>
-        <li>Big Data & Data Mining</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>CERTIFICATIONS</h2>
-
-      <ul>
-        <li>Stanford University — Machine Learning Specialization</li>
-        <li>Google — Advanced Data Analytics Specialization</li>
-        <li>DeepLearning.AI — Mathematics for Machine Learning</li>
-        <li>Duke University — Data Visualization with Tableau</li>
-        <li>UC Davis — SQL for Data Science</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>TECHNICAL SKILLS</h2>
-
-      <p><strong>Programming:</strong> Python, SQL, JavaScript, Java</p>
-      <p><strong>Data Science:</strong> Pandas, NumPy, Scikit-learn</p>
-      <p><strong>Machine Learning:</strong> Classification, Regression, Feature Engineering</p>
-      <p><strong>Data Systems:</strong> ETL Pipelines, Database Design, Data Modeling</p>
-      <p><strong>Tools:</strong> Tableau, Excel, Google Sheets, MySQL, Git</p>
-    </section>
-
-    <section>
-      <h2>CONTACT</h2>
-
-      <p>
-        Email:
-        <a href="mailto:iam.karamalmnajed@gmail.com">
-          iam.karamalmnajed@gmail.com
-        </a>
-      </p>
-
-      <p>
-        LinkedIn:
-        <a href="https://linkedin.com/in/karam-al-mnajed" target="_blank">
-          linkedin.com/in/karam-al-mnajed
-        </a>
-      </p>
-
-      <p>
-        GitHub:
-        <a href="https://github.com/KaramAlmnajed" target="_blank">
-          github.com/KaramAlmnajed
-        </a>
-      </p>
-
-      <p>Alexandria, Egypt</p>
-    </section>
-
-    <footer>
-      <p>© Karam Al Mnajed</p>
-    </footer>
-
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-inner">
+    <div class="mobile-menu-links">
+      <a href="#" class="mobile-menu-link" data-index="01">Home</a>
+      <a href="#features" class="mobile-menu-link" data-index="02">Capabilities</a>
+      <a href="#pricing" class="mobile-menu-link" data-index="03">Engagement</a>
+      <a href="#testimonials" class="mobile-menu-link" data-index="04">Axioms</a>
+      <a href="#integrations" class="mobile-menu-link" data-index="05">Expertise</a>
+      <a href="#faq" class="mobile-menu-link" data-index="06">Questions</a>
+      <a href="#cta" class="mobile-menu-link" data-index="07">Work Together</a>
+    </div>
   </div>
+</div>
+
+<!-- Side Panels -->
+<nav class="side-panel left" aria-label="Explore indicators">
+  <span class="side-label">Explore</span>
+  <div class="side-track"><div class="side-track-fill" id="leftTrack"></div></div>
+  <div class="side-dot active"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-readout" id="scrollPct">01</div>
+</nav>
+
+<nav class="side-panel right" aria-label="Profile indicators">
+  <span class="side-label">Profile</span>
+  <div class="side-track"><div class="side-track-fill" id="rightTrack"></div></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot active"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-readout">KAM</div>
+</nav>
+
+<main class="main">
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-badge">
+      <div class="hero-badge-dot"></div>
+      <span>Burdened with strong opinions and inconvenient pattern recognition</span>
+    </div>
+    <h1>Systems that<br><em>fail quietly</em></h1>
+    <p class="hero-sub">
+      I build software, notice expensive patterns before they become urgent, and remain skeptical of certainty. For those who find most mission statements embarrassing.
+    </p>
+    <div class="hero-ctas">
+      <a href="https://calendly.com/karam-al-mnajed-cs/new-meeting" class="btn-primary">Talk About It</a>
+      <a href="#features" class="btn-secondary">See What I Do</a>
+    </div>
+    <div class="hero-metrics">
+      <div class="metric">
+        <div class="metric-value">Sufficient</div>
+        <div class="metric-label">Confidence in Assumptions</div>
+      </div>
+      <div class="metric">
+        <div class="metric-value">Several</div>
+        <div class="metric-label">Patterns Noticed</div>
+      </div>
+      <div class="metric">
+        <div class="metric-value">Regrettably</div>
+        <div class="metric-label">Decisions Influenced</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ LOGO TICKER ═══ -->
+  <div class="logo-ticker reveal">
+    <div class="logo-ticker-label">Calibrated for chronic overestimators.</div>
+    <div class="ticker-track" id="tickerTrack">
+      <span class="ticker-item">Overconfidence Detection</span><span class="ticker-dot"></span>
+      <span class="ticker-item">Premature Optimization</span><span class="ticker-dot"></span>
+      <span class="ticker-item">Scope Creep Negotiation</span><span class="ticker-dot"></span>
+      <span class="ticker-item">Dependency Hell</span><span class="ticker-dot"></span>
+      <span class="ticker-item">Legacy Code Worship</span><span class="ticker-dot"></span>
+      <span class="ticker-item">Meeting Saturation</span><span class="ticker-dot"></span>
+      <span class="ticker-item">Alert Fatigue Management</span><span class="ticker-dot"></span>
+      <span class="ticker-item">Cache Invalidation</span><span class="ticker-dot"></span>
+      <span class="ticker-item">Off-by-One Errors</span><span class="ticker-dot"></span>
+      <span class="ticker-item">Heisenbugs</span><span class="ticker-dot"></span>
+      <span class="ticker-item">Workaround Documentation</span><span class="ticker-dot"></span>
+      <span class="ticker-item">Temporary Solutions (since 2018)</span><span class="ticker-dot"></span>
+    </div>
+  </div>
+
+  <!-- ═══ FEATURES ═══ -->
+  <section class="section" id="features">
+
+    <div class="feature reveal">
+      <div class="feature-visual">
+        <img src="images/technical_consulting.svg" alt="Consulting slide deck with fading dreams">
+      </div>
+      <div class="feature-content">
+        <div class="feature-number">01</div>
+        <p class="section-tag">Pretending to Architect</p>
+        <h2 class="section-title">Complex rarely means <strong>necessary</strong></h2>
+        <p class="section-body">
+          Software should explain itself. Architecture should prevent future arguments, not generate diagrams nobody opens. I design systems that stay boring so you can sleep.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature reverse reveal">
+      <div class="feature-visual">
+        <img src="images/analytical_intelligence.svg" alt="Correlation appreciation engine">
+      </div>
+      <div class="feature-content">
+        <div class="feature-number">02</div>
+        <p class="section-tag">Finding Patterns Nobody Asked For</p>
+        <h2 class="section-title">Every system eventually <strong>explains itself. Usually at 3 AM</strong></h2>
+        <p class="section-body">
+          Patterns appear long before outages. Most organizations just need to collect enough evidence to finally believe their own data. I speed up that process.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature-visual">
+        <img src="images/systems_engineering.svg" alt="Shared blame distribution center">
+      </div>
+      <div class="feature-content">
+        <div class="feature-number">03</div>
+        <p class="section-tag">Engineering While Skeptical</p>
+        <h2 class="section-title">One architecture. <strong>Fewer emergency meetings</strong></h2>
+        <p class="section-body">
+          Automation moves mistakes faster. I just try to make them easier to spot before anyone else notices. Less reinvention, more problems that actually deserve human attention.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="silk-divider reveal"></div>
+  <!-- ═══ PRICING ═══ -->
+  <section class="section section-center" id="pricing">
+    <p class="section-tag reveal">Engagement Models</p>
+    <h2 class="section-title reveal reveal-d1">Pick the relationship <strong>that fits the problem</strong></h2>
+    <p class="section-body reveal reveal-d2">Start with a conversation. Continue only if the problem actually requires deeper work.</p>
+
+    <div class="pricing-toggle reveal reveal-d3">
+      <span class="pricing-toggle-label active" id="monthlyLabel">Consulting</span>
+      <div class="toggle-switch" id="pricingToggle" role="switch" aria-checked="false" tabindex="0"></div>
+      <span class="pricing-toggle-label" id="annualLabel">Implementation</span>
+      <span class="save-badge" id="saveBadge">Clear Terms</span>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="pricing-card reveal reveal-d1">
+        <div class="pricing-badge">Common Starting Point</div>
+        <div class="pricing-tier">Discovery</div>
+        <div class="pricing-prices">
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Per session</div>
+              <div class="price-option-left">
+                <span class="price-amount">450</span>
+                <span class="price-period">USD</span>
+              </div>
+            </div>
+            <div class="price-yearly">60 min</div>
+          </div>
+          <div class="price-option annual">
+            <div>
+              <div class="price-label">Focused audit</div>
+              <div class="price-option-left">
+                <span class="price-amount">3,500</span>
+                <span class="price-period">USD</span>
+              </div>
+            </div>
+            <div class="price-yearly">1–2 weeks</div>
+          </div>
+        </div>
+        <p class="pricing-desc">For teams that need a clear-eyed assessment before committing to a direction. No fluff, no upsell.</p>
+        <ul class="pricing-features">
+          <li>Problem diagnosis</li>
+          <li>Architecture review</li>
+          <li>Written summary</li>
+          <li>Recommended path</li>
+          <li>Technical direction</li>
+        </ul>
+        <a href="https://calendly.com/karam-al-mnajed-cs/new-meeting" class="btn-secondary">Book Discovery</a>
+      </div>
+
+      <div class="pricing-card featured reveal reveal-d2">
+        <div class="pricing-badge">Common Starting Point</div>
+        <div class="pricing-tier">Implementation</div>
+        <div class="pricing-prices">
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Strategy sprint</div>
+              <div class="price-option-left">
+                <span class="price-amount">2,500</span>
+                <span class="price-period">USD</span>
+              </div>
+            </div>
+            <div class="price-yearly">1 week</div>
+          </div>
+          <div class="price-option annual">
+            <div>
+              <div class="price-label">Full build</div>
+              <div class="price-option-left">
+                <span class="price-amount">10K+</span>
+              </div>
+            </div>
+            <div class="price-yearly">Scoped</div>
+          </div>
+        </div>
+        <p class="pricing-desc">For organizations that need software, analytics, or ML systems built and delivered without the usual ceremony.</p>
+        <ul class="pricing-features">
+          <li>Software development</li>
+          <li>Model building</li>
+          <li>Data infrastructure</li>
+          <li>Workflow automation</li>
+          <li>Decision support</li>
+          <li>Technical oversight</li>
+        </ul>
+        <a href="mailto:karam.al.mnajed.cs@gmail.com" class="btn-primary">Start a Project</a>
+      </div>
+
+      <div class="pricing-card reveal reveal-d3">
+        <div class="pricing-badge">Common Starting Point</div>
+        <div class="pricing-tier">Advisory</div>
+        <div class="pricing-prices">
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Monthly</div>
+              <div class="price-option-left">
+                <span class="price-amount">4,000</span>
+                <span class="price-period">USD</span>
+              </div>
+            </div>
+            <div class="price-yearly">Retainer</div>
+          </div>
+          <div class="price-option annual">
+            <div>
+              <div class="price-label">Embedded</div>
+              <div class="price-option-left">
+                <span class="price-amount">8,000</span>
+                <span class="price-period">USD</span>
+              </div>
+            </div>
+            <div class="price-yearly">Monthly</div>
+          </div>
+        </div>
+        <p class="pricing-desc">For executives who want a second brain that doesn't care about office politics — just about what actually works.</p>
+        <ul class="pricing-features">
+          <li>Technical advisory</li>
+          <li>Architecture reviews</li>
+          <li>Strategic direction</li>
+          <li>Executive briefings</li>
+          <li>Priority access</li>
+          <li>Long-term guidance</li>
+          <li>Ongoing refinement</li>
+        </ul>
+        <a href="mailto:karam.al.mnajed.cs@gmail.com" class="btn-secondary">Inquire Advisory</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="silk-divider reveal"></div>
+
+  <!-- ═══ TESTIMONIALS ═══ -->
+  <section class="section section-center" id="testimonials">
+    <p class="section-tag reveal">Axioms</p>
+    <h2 class="section-title reveal reveal-d1">Things that remain true <strong>no matter how much we wish otherwise</strong></h2>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal reveal-d1">
+        <p class="testimonial-quote">"Most pipelines work perfectly until data enters them."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">01</div>
+          <div>
+            <div class="testimonial-name">First Principle</div>
+            <div class="testimonial-role">Painfully True</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-d2">
+        <p class="testimonial-quote">"Automation moves mistakes faster."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">02</div>
+          <div>
+            <div class="testimonial-name">Second Principle</div>
+            <div class="testimonial-role">Painfully True</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-d3">
+        <p class="testimonial-quote">"Correlation remains available for misuse."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">03</div>
+          <div>
+            <div class="testimonial-name">Third Principle</div>
+            <div class="testimonial-role">Painfully True</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="silk-divider reveal"></div>
+
+  <!-- ═══ INTEGRATIONS ═══ -->
+  <section class="section section-center" id="integrations">
+    <p class="section-tag reveal">Expertise</p>
+    <h2 class="section-title reveal reveal-d1">Applied across <strong>computational domains</strong></h2>
+    <p class="section-body reveal reveal-d2">Experience across engineering, analytics, infrastructure, and intelligent systems. Applied where ambiguity gets expensive and assumptions turn into technical debt.</p>
+
+    <div class="integrations-grid reveal reveal-d3">
+      <div class="integration-item">
+        <div class="integration-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5a2.5 2.5 0 0 0 0 5"/><path d="M15.5 15.5a2.5 2.5 0 0 1 0-5"/></svg>
+        </div>
+        <div class="integration-name">Overfitting Prevention</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="4" y1="20" x2="20" y2="20"/><line x1="4" y1="16" x2="20" y2="16"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="8" x2="20" y2="8"/><line x1="4" y1="4" x2="20" y2="4"/></svg>
+        </div>
+        <div class="integration-name">Underfitting Acceptance</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/><path d="M16 8l2-2"/><path d="M16 16l2 2"/><path d="M8 8l-2-2"/><path d="M8 16l-2 2"/></svg>
+        </div>
+        <div class="integration-name">Hyperparameter Tuning (by gut)</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.1.2-2.2.5-3.3"/><path d="M9 12h.01"/><path d="M15 12h.01"/><path d="M9.5 16a3.5 3.5 0 0 0 5 0"/></svg>
+        </div>
+        <div class="integration-name">Data Cleaning (denial)</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        </div>
+        <div class="integration-name">Feature Engineering (guesswork)</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </div>
+        <div class="integration-name">Model Explanation Excuses</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <div class="integration-name">Bias Amplification</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/><path d="M2 12h20"/></svg>
+        </div>
+        <div class="integration-name">Variance Inflation</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"/><line x1="12" y1="2" x2="12" y2="12"/></svg>
+        </div>
+        <div class="integration-name">Deployment Nightmares</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/><path d="M9.5 9.5l.5.5"/><path d="M14.5 9.5l-.5.5"/><path d="M9.5 14.5l.5-.5"/><path d="M14.5 14.5l-.5-.5"/></svg>
+        </div>
+        <div class="integration-name">Monitoring Fatigue</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg>
+        </div>
+        <div class="integration-name">Rollback Strategies</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M9 16l2 2 4-4"/></svg>
+        </div>
+        <div class="integration-name">Post-mortem Scheduling</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="silk-divider reveal"></div>
+
+  <!-- ═══ Contact ═══ -->
+  <section class="section section-center" id="faq">
+    <p class="section-tag reveal">Repeated Questions</p>
+    <h2 class="section-title reveal reveal-d1"><strong>Questions people ask when they're serious</strong></h2>
+
+    <div class="faq-list reveal reveal-d2">
+      <div class="faq-controls">
+        <button class="faq-toggle-all" id="faqToggleAll">Expand All</button>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do you actually write code or just draw boxes?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Both. But the boxes are a courtesy for people who don't enjoy reading diffs. The code is where the opinions live.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What if our data is a mess?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Most data is. The goal is to find enough signal before the noise becomes a political issue. We'll work with what exists, not what was promised in the slide deck.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How do you handle impossible deadlines?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">By defining what “impossible” actually means. Usually the deadline isn't the problem — the undiscussed scope is. We'll make that visible first.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What's your process when the client doesn't know what they want?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">That's the default starting point. Discovery exists precisely to turn vague discomfort into a problem statement. I'm very comfortable with the uncomfortable.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can you work with our existing spaghetti?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes, but I'll be honest about which strands can hold weight. We can refactor gradually or isolate the tangled parts. Either way, the pasta gets named.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER CTA ═══ -->
+  <section class="footer-cta" id="cta">
+    <p class="section-tag reveal">If You Insist</p>
+    <h2 class="section-title reveal reveal-d1">Your next vague<br><strong>requirement becomes slightly less vague</strong></h2>
+    <p class="section-body reveal reveal-d2" style="margin: 0 auto;">Evidence first. Assumptions require verification. I remain cautiously optimistic.</p>
+    <div class="footer-ctas reveal reveal-d3">
+      <a href="https://calendly.com/karam-al-mnajed-cs/new-meeting" class="btn-primary">Schedule Discussion</a>
+      <a href="mailto:karam.al.mnajed.cs@gmail.com" class="btn-secondary">Send a Message</a>
+    </div>
+
+    <div class="footer-bar reveal reveal-d4" style="margin-top: 80px;">
+      <div class="footer-brand">Karam Al Mnajed</div>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/karam-al-mnajed">LinkedIn</a>
+        <a href="https://github.com/karamalmnajed">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
